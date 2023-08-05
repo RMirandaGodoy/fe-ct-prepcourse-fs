@@ -65,20 +65,94 @@
 
 // console.log(frase)
 
-function saludo (nombre, apellido){
-    console.log(arguments.length)
+// function saludo (nombre, apellido){
+//     console.log(arguments.length)
+// }
+
+// saludo ('Aura', 'Sandoval')
+
+
+// function suma(...args){
+//     console.log(args)
+//     var suma = 0;
+//     for(var arg of args){
+//         suma = suma + arg
+//     }
+//     return suma
+// }
+
+// console.log(suma(2,6,8,12,36,45));
+
+// for (var i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+
+// function encontrarVocalA (String){
+
+// for(var i = 0; i< String.length; i++){
+//     if(String[i] === 'a'){
+//         return 'Encontramos la vocal a';
+//         }
+//     }
+//     return 'Esta palabra no tiene vocal a'
+// }
+
+// console.log(encontrarVocalA('Paula'))
+
+// function cuentaRegresiva(num){
+//     for(var i= num; i>=0; i--){
+//         console.log(i);
+//     }
+// }
+
+// cuentaRegresiva(5)
+
+// function deletrear (String){
+//     for(var i=0; i< String.length; i++){
+//         console.log(i);
+//     }
+// }
+
+// deletrear('Fatima')
+
+// function mientrasMenorSeis(){
+//     var contador = 1;
+//     while(contador < 6){
+//         console.log('contador es: ' + contador);
+//         contador = contador + 1;
+//     }
+//     return contador
+// }
+
+// console.log(mientrasMenorSeis())
+
+// var contador = 0
+// do {
+//     console.log('Contador ' + contador);
+//     contador ++;
+//     console.log(contador);
+// } while (contador<=5);
+
+// function semaforo(color){
+//     switch(color){
+//         case 'rojo':
+//             return 'Los autos se detienen';
+//         case 'amarillo':
+//             return 'Los autos avanzan o se detienen';
+//         case 'verde':
+//             return 'Los autos avanzan';
+//         default:
+//             return 'Este color no es del semáforo';
+//     }
+// }
+
+// console.log(semaforo('verde'))
+
+var comidas=['pizza', 'hamburguesa', 'hot dog', 'lasagna']
+// for(var i=0; i<comidas.length; i++){
+//     console.log(comidas[i]);
+//}
+
+for(var comidas of comidas){
+    console.log(comidas);
 }
-
-saludo ('Aura', 'Sandoval')
-
-
-function suma(...args){
-    console.log(args)
-    var suma = 0;
-    for(var arg of args){
-        suma = suma + arg
-    }
-    return suma
-}
-
-console.log(suma(2,6,8,12,36,45));

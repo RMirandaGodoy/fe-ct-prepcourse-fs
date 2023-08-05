@@ -7,7 +7,6 @@ function crearGato(nombre, edad) {
    // La propiedad "meow" será una función que retorne el string: "Meow!".
    // Retornar el objeto.
    // Tu código:
-   var objeto = {nombre:'raul', edad: 31,}
 }
 
 console.log(crearGato())

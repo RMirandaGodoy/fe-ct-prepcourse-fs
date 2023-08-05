@@ -38,10 +38,16 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-   if (idioma === "aleman") return "Guten Tag!";
-   else if (idioma === "mandarin") return "Ni Hao!";
-   else if (idioma === "ingles") return "Hello!";
-   else return "Hola!";
+   switch(idioma){
+      case 'aleman':
+         return 'Guten Tag!'
+      case 'mandarin':
+         return 'Ni Hao!'
+      case 'ingles':
+         return 'Hello!'
+      default:
+         return 'Hola!'
+   }
 }
 
 function colors(color) {
@@ -104,6 +110,22 @@ function fizzBuzz(num) {
    else if (num % 5 === 0) return "buzz";
    else if (num % 3 === 0) return "fizz";
    else return false;
+
+   // if (num % 3 === 0) return 'fizz';
+   // else if (num % 5 === 0) return 'buzz'
+   // else if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+   // else return false;
+
+   // switch (num) {
+   //    case (num % 3 ===0):
+   //       return 'fizz';
+   //    case (num % 5 ===0):
+   //       return 'buzz';
+   //    case (num % 3 === 0 && num % 5 === 0):
+   //       return 'fizzbuzz';   
+   //    default:
+   //       return false;
+   // }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -116,7 +138,7 @@ function operadoresLogicos(num1, num2, num3) {
    // Tu código:
    if(num1 > num2 && num1 > num3 && num1 > 0) return "Numero 1 es mayor y positivo";
    if(num1 < 0 || num2 < 0 || num3 < 0) return "Hay negativos";
-   if(num3 > num1 && num3 > num1)return num3 + 1;
+   if(num3 > num1 && num3 > num2)return num3 + 1;
    if(num1 === 0 && num2 === 0 && num3 === 0) return "Error";
    else return false;   
 }
