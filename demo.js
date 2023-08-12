@@ -148,11 +148,53 @@
 
 // console.log(semaforo('verde'))
 
-var comidas=['pizza', 'hamburguesa', 'hot dog', 'lasagna']
-// for(var i=0; i<comidas.length; i++){
-//     console.log(comidas[i]);
-//}
+// var comidas=['pizza', 'hamburguesa', 'hot dog', 'lasagna']
+// // for(var i=0; i<comidas.length; i++){
+// //     console.log(comidas[i]);
+// //}
 
-for(var comidas of comidas){
-    console.log(comidas);
+// // for(var comidas of comidas){
+// //     console.log(comidas);
+// // }
+
+// // console.log();clear
+
+// var palabras = ['Hola', 'mi', 'nombre', 'es', 'Raúl']
+
+// var frase = palabras.reduce(function(acumulador, elemento){
+//         return acumulador + ' ' + elemento
+// }, 'Buenas tardes, saludo: ')
+
+// frase
+
+// var numeros = [1,2,3,4,5]
+
+// var suma = numeros.reduce(function(acumulador, elemento){
+//     return acumulador + elemento;
+// },0)
+
+// suma
+
+// function multiplicar(a,b){
+//     return a * b;
+// }
+
+// var producto = numeros.reduce(multiplicar)
+// producto
+
+// function saludo(nombre, apellido){
+//     console.log(arguments.length);
+// }
+
+// saludo('Vero','Díaz',10,'hola')
+
+function suma (...args){
+    console.log(args);
+    var sum = 0;
+    for (var arg of args) sum = sum + arg;
+        return sum
 }
+
+var x = suma(4,8,9,12,45,31)
+
+console.log(x);

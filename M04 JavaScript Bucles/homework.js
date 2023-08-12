@@ -110,22 +110,6 @@ function fizzBuzz(num) {
    else if (num % 5 === 0) return "buzz";
    else if (num % 3 === 0) return "fizz";
    else return false;
-
-   // if (num % 3 === 0) return 'fizz';
-   // else if (num % 5 === 0) return 'buzz'
-   // else if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
-   // else return false;
-
-   // switch (num) {
-   //    case (num % 3 ===0):
-   //       return 'fizz';
-   //    case (num % 5 ===0):
-   //       return 'buzz';
-   //    case (num % 3 === 0 && num % 5 === 0):
-   //       return 'fizzbuzz';   
-   //    default:
-   //       return false;
-   // }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -140,7 +124,7 @@ function operadoresLogicos(num1, num2, num3) {
    if(num1 < 0 || num2 < 0 || num3 < 0) return "Hay negativos";
    if(num3 > num1 && num3 > num2)return num3 + 1;
    if(num1 === 0 && num2 === 0 && num3 === 0) return "Error";
-   else return false;   
+   else return false;
 }
 
 function esPrimo(num) {
@@ -181,9 +165,8 @@ function doWhile(num) {
    var contador = 0;
    do{
       num = num + 5;
-      contador = contador + 1;
+      contador = contador ++;
    }while(contador < 8)
-
    return num;
 }
 
