@@ -188,13 +188,90 @@
 
 // saludo('Vero','Díaz',10,'hola')
 
-function suma (...args){
-    console.log(args);
-    var sum = 0;
-    for (var arg of args) sum = sum + arg;
-        return sum
+// function suma (...args){
+//     console.log(args);
+//     var sum = 0;
+//     for (var arg of args) sum = sum + arg;
+//         return sum
+// }
+
+// var x = suma(4,8,9,12,45,31)
+
+// console.log(x);
+
+
+// function Gato(nombre){
+//     this.nombre = nombre
+//     this.maullar = function(){
+//         return ' miau, mi nombre es ' + this.nombre + ', miau';
+//     }
+// }
+
+// var sam = new Gato('Sam') 
+// console.log(sam.maullar());
+
+// var kitty = new Gato('Kitty')
+// console.log(kitty.maullar());
+
+// function Usuario(nombre, email){
+//     this.nombre = nombre;
+//     this.email =email;
+// }
+
+// Usuario.prototype.presentacion =function(){
+//     return 'Mi nombre es ' + this.nombre + ', mi email es: ' + this.email
+// }
+
+// var German = new Usuario ('German', 'ger@mail.com')
+
+// console.log(German.presentacion());
+
+// Array.prototype.mayoresQueTres = function(){
+//     var arreglo = [];
+//     for (var i = 0; i < this.length; i++) {
+//         if (this[i] > 3) {
+//             arreglo.push(this[i])            
+//         }
+//     }
+
+//     return arreglo;
+// }
+
+// var arr = [1,2,3,4,5];
+
+// var nuevoArray = arr.mayoresQueTres()
+
+// console.log(nuevoArray);
+
+
+// class Persona{
+//     constructor(nombre, edad){
+//         this.mombre;
+//         this.edad;
+//     }
+
+//     saludar(){
+//         return 'Hola, mi nombre es ' + this.nombre + ' y tengo' + this.edad + ' años'
+//     }
+// }
+
+// class Programador extends Persona(){
+//     super (nombre, edad)
+//     this.experiencia = experiencia
+// }
+
+
+function decirHola (usuario){
+    return 'Hola, ' + usuario + '!';
 }
 
-var x = suma(4,8,9,12,45,31)
+function decirAdios (usuario){
+    return 'Que estés muy bien ' + usuario + ' ¡adiocito!';
+}
 
-console.log(x);
+function crearSaludo (usuario, cb){
+    return cb(usuario)
+}
+
+console.log(crearSaludo('Daniel',decirHola));
+console.log(crearSaludo('Fatima', decirAdios));
