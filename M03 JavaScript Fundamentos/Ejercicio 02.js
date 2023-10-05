@@ -7,6 +7,11 @@ function devolverString(string) {
    return string;
 }
 
+// var mensaje = devolverString('Hola');
+// console.log(mensaje);
+
+// devolverString('Hola')
+
 // ⛔️ "X" e "Y" son números.
 
 function suma(x, y) {
@@ -14,6 +19,8 @@ function suma(x, y) {
    // Tu código:
    return(x + y);
 }
+
+// console.log(suma(1,6));
 
 function resta(x, y) {
    // Retorna el resultado de la resta.

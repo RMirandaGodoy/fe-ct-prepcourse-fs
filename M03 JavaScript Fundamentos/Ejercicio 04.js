@@ -27,6 +27,9 @@ function redondearNumero(num) {
    return(Math.round(num));
 }
 
+// var resultado = redondearNumero(7.5)
+// console.log(resultado);
+
 function redondearHaciaArriba(num) {
    // Redondea "num" hacia arriba y retórnalo.
    // Tu código:
